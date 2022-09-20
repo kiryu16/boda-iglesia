@@ -1,11 +1,15 @@
 <script setup>
 import BannerSection from './components/BannerSection.vue'
 import CountdownSection from './components/CountdownSection.vue'
+import WhereSection from './components/WhereSection.vue'
+import HotelSection from './components/HotelSection.vue'
+import GallerySection from './components/GallerySection.vue'
 </script>
 
 <template>
   <BannerSection />
   <CountdownSection />
+  <WhereSection />
+  <HotelSection />
+  <GallerySection />
 </template>
-
-<style scoped></style>

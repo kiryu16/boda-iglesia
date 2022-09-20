@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+
 const weddingDate = new Date(2022, 10, 26)
 const diff = ref(Math.abs(new Date() - weddingDate))
 const diffSeconds = computed(() => Math.floor((diff.value / 1000) % 60))
@@ -13,7 +14,6 @@ onMounted(() => {
     diff.value -= 1000
   }, 1000)
 })
-
 onBeforeUnmount(() => {
   clearInterval(interval)
 })
@@ -22,21 +22,23 @@ onBeforeUnmount(() => {
 <template>
   <div class="countdown-section">
     <div class="main-container">
-      <h2>Cuenta regresiva</h2>
+      <h2 data-aos="fade-up" data-aos-delay="1000">
+        Tiempo restante hasta la fecha
+      </h2>
       <div class="count-container">
-        <div>
+        <div data-aos="fade-up" data-aos-delay="1300">
           <p>{{ diffDays }}</p>
           <p>Días</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="1600">
           <p>{{ diffHours }}</p>
           <p>Horas</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="1900">
           <p>{{ diffMinutes }}</p>
           <p>Minutos</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="2200">
           <p>{{ diffSeconds }}</p>
           <p>Segundos</p>
         </div>
@@ -48,17 +50,26 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 .countdown-section {
   width: 100%;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
 
+  @media (max-width: 600px) {
+    height: 320px;
+  }
+
   h2 {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 600;
     color: #000;
     text-align: center;
+    margin: 0 0 30px;
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
   }
 
   .count-container {
@@ -69,7 +80,36 @@ onBeforeUnmount(() => {
 
     > div {
       + div {
-        margin-left: 20px;
+        margin-left: 100px;
+
+        @media (max-width: 600px) {
+          margin-left: 20px;
+        }
+      }
+
+      p {
+        text-align: center;
+        margin: 0;
+
+        &:first-child {
+          font-size: 60px;
+          font-weight: 500;
+          color: #917040;
+
+          @media (max-width: 600px) {
+            font-size: 30px;
+          }
+        }
+
+        &:last-child {
+          font-size: 20px;
+          font-weight: 500;
+          color: #917040;
+
+          @media (max-width: 600px) {
+            font-size: 16px;
+          }
+        }
       }
     }
   }

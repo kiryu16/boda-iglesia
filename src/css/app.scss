@@ -13,6 +13,7 @@ h4,
 h5,
 h6 {
   font-family: 'Aref Ruqaa Ink', serif;
+  margin: 0;
 }
 
 .main-container {
@@ -20,8 +21,9 @@ h6 {
   max-width: 1280px;
   padding: 0 40px;
   margin: 0px auto;
+  box-sizing: border-box;
 
-  @media screen and (max-width: 1023.99px) {
+  @media (max-width: 1023.99px) {
     padding: 0 20px;
   }
 }
