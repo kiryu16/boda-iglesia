@@ -1,7 +1,7 @@
 <template>
-  <div class="gallery-section">
+  <section class="gallery-section">
     <div class="main-container">
-      <h2 data-aos="fade-up" data-aos-delay="500">
+      <h2 data-aos="fade-up" data-aos-delay="300">
         ¡Gracias por acompañarnos!
       </h2>
       <div class="grid">
@@ -24,25 +24,16 @@
           <img src="../assets/foto6.jpg" />
         </div>
         <div>
-          <img src="../assets/foto7.jpg" />
-        </div>
-        <div>
-          <img src="../assets/foto8.jpg" />
-        </div>
-        <div>
-          <img src="../assets/foto9.jpg" />
-        </div>
-        <div>
           <img src="../assets/foto10.jpg" />
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 .gallery-section {
-  background-color: #e3d0ca;
+  background-color: #e0e0e0;
   padding: 50px 0;
 
   h2 {

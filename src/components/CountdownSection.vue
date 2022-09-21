@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 
-const weddingDate = new Date(2022, 10, 26)
+const weddingDate = new Date(2022, 10, 26, 13)
 const diff = ref(Math.abs(new Date() - weddingDate))
 const diffSeconds = computed(() => Math.floor((diff.value / 1000) % 60))
 const diffMinutes = computed(() => Math.floor((diff.value / 1000 / 60) % 60))
@@ -20,31 +20,31 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="countdown-section">
+  <section class="countdown-section">
     <div class="main-container">
-      <h2 data-aos="fade-up" data-aos-delay="1000">
+      <h2 data-aos="fade-up" data-aos-delay="300">
         Tiempo restante hasta la fecha
       </h2>
       <div class="count-container">
-        <div data-aos="fade-up" data-aos-delay="1300">
+        <div data-aos="fade-up" data-aos-delay="600">
           <p>{{ diffDays }}</p>
           <p>Días</p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="1600">
+        <div data-aos="fade-up" data-aos-delay="900">
           <p>{{ diffHours }}</p>
           <p>Horas</p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="1900">
+        <div data-aos="fade-up" data-aos-delay="1200">
           <p>{{ diffMinutes }}</p>
           <p>Minutos</p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="2200">
+        <div data-aos="fade-up" data-aos-delay="1500">
           <p>{{ diffSeconds }}</p>
           <p>Segundos</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -55,6 +55,7 @@ onBeforeUnmount(() => {
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
+  background: #f0f0f0;
 
   @media (max-width: 600px) {
     height: 320px;

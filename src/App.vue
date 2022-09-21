@@ -4,12 +4,14 @@ import CountdownSection from './components/CountdownSection.vue'
 import WhereSection from './components/WhereSection.vue'
 import HotelSection from './components/HotelSection.vue'
 import GallerySection from './components/GallerySection.vue'
+import RelativeSection from './components/RelativeSection.vue'
 </script>
 
 <template>
   <BannerSection />
-  <CountdownSection />
+  <RelativeSection />
   <WhereSection />
+  <CountdownSection />
   <HotelSection />
   <GallerySection />
 </template>

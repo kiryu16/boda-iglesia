@@ -1,9 +1,9 @@
 <template>
-  <div class="hotel-section">
+  <section class="hotel-section">
     <div class="main-container">
-      <h2 data-aos="fade-up" data-aos-delay="500">Hotel sugerido</h2>
-      <h3 data-aos="fade-up" data-aos-delay="500">Hotel Coroneo</h3>
-      <div class="location" data-aos="fade-up" data-aos-delay="500">
+      <h2 data-aos="fade-up" data-aos-delay="300">Hotel sugerido</h2>
+      <h3 data-aos="fade-up" data-aos-delay="300">Hotel Coroneo</h3>
+      <div class="location" data-aos="fade-up" data-aos-delay="300">
         <p><i class="eva eva-pin"></i> Andador Hidalgo #12, Coroneo, Gto.</p>
         <p>
           <i class="eva eva-phone"></i>
@@ -20,7 +20,7 @@
           <a href="mailto:hotelcoroneo@gmail.com">hotelcoroneo@gmail.com</a>
         </p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="500">
+      <div data-aos="fade-up" data-aos-delay="300">
         <h4>Precios de las habitaciones (Fecha de los precios: 10/09/2022 )</h4>
         <p>Habitación con una cama matrimonial: <b>$400</b></p>
         <p>Habitación con dos camas matrimoniales: <b>$750</b></p>
@@ -40,12 +40,12 @@
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 .hotel-section {
-  background-color: #f0e8e6;
+  background-color: #ebebeb;
   padding: 50px 0;
 
   h2 {

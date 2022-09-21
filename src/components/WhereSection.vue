@@ -1,15 +1,15 @@
 <template>
-  <div class="where-section">
+  <section class="where-section">
     <div class="main-container where-container">
-      <h2 data-aos="fade-up" data-aos-delay="500">¿Cuándo y dónde?</h2>
+      <h2 data-aos="fade-up" data-aos-delay="300">¿Cuándo y dónde?</h2>
       <div>
-        <p data-aos="fade-up" data-aos-delay="500">
+        <p data-aos="fade-up" data-aos-delay="300">
           <i class="eva eva-calendar"></i> 26 de noviembre de 2022
         </p>
-        <p data-aos="fade-up" data-aos-delay="500">
+        <p data-aos="fade-up" data-aos-delay="300">
           <i class="eva eva-clock"></i> 1:00 pm
         </p>
-        <p data-aos="fade-up" data-aos-delay="500">
+        <p data-aos="fade-up" data-aos-delay="300">
           <i class="eva eva-pin"></i> Santuario de Santiago Apóstol, Coroneo,
           Gto.
         </p>
@@ -26,14 +26,14 @@
     ></iframe>
     <div class="main-container where-container">
       <div>
-        <p data-aos="fade-up" data-aos-delay="500">
+        <p data-aos="fade-up" data-aos-delay="300">
           Después de la ceremonia religiosa los esperamos en la siguiente
           ubicación:
         </p>
-        <p data-aos="fade-up" data-aos-delay="500">
+        <p data-aos="fade-up" data-aos-delay="300">
           <i class="eva eva-clock"></i> 4:00 pm
         </p>
-        <p data-aos="fade-up" data-aos-delay="500">
+        <p data-aos="fade-up" data-aos-delay="300">
           <i class="eva eva-pin"></i> Callejón del fresno #2, Cerro Prieto
           Poniente, Coroneo, Gto.
         </p>
@@ -48,12 +48,12 @@
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 .where-section {
-  background-color: #f8f6f7;
+  background-color: #f8f8f8;
   padding: 50px 0;
 
   h2 {

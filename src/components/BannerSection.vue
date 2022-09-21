@@ -1,10 +1,10 @@
 <template>
-  <div class="banner-section">
+  <section class="banner-section">
     <div class="fade" />
     <div class="container">
-      <h1 data-aos="fade-up" data-aos-delay="1000">Nuestra boda</h1>
+      <h1 data-aos="fade-up" data-aos-delay="1000">Yadira y Emmanuel</h1>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -49,9 +49,10 @@
       color: #f0f0f0;
       line-height: initial;
       margin: 0;
+      text-align: center;
 
       @media (max-width: 600px) {
-        font-size: 50px;
+        font-size: 38px;
       }
     }
   }
